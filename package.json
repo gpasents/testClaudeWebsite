@@ -1,0 +1,9 @@
+{
+  "name": "chirp",
+  "version": "1.0.0",
+  "description": "A Twitter-like single page application",
+  "private": true,
+  "scripts": {
+    "start": "node server.js"
+  }
+}

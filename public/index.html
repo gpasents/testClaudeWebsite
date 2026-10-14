@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chirp</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="layout">
+    <nav class="sidebar">
+      <a href="#/" class="logo" aria-label="Home">🐦</a>
+      <a href="#/" class="nav-link" data-route="home"><span>🏠</span><b>Home</b></a>
+      <a href="#/explore" class="nav-link" data-route="explore"><span>🔍</span><b>Explore</b></a>
+      <a href="#/bookmarks" class="nav-link" data-route="bookmarks"><span>🔖</span><b>Bookmarks</b></a>
+      <a href="#/profile/you" class="nav-link" data-route="profile"><span>👤</span><b>Profile</b></a>
+      <button class="btn btn-primary btn-wide" id="sidebar-post">Post</button>
+      <div class="me-card" id="me-card"></div>
+    </nav>
+
+    <main class="main" id="main"></main>
+
+    <aside class="aside">
+      <input type="search" id="search" class="search" placeholder="Search Chirp" />
+      <section class="panel">
+        <h3>Trends for you</h3>
+        <div id="trends"></div>
+      </section>
+      <section class="panel">
+        <h3>Who to follow</h3>
+        <div id="who-to-follow"></div>
+      </section>
+      <button class="link-btn" id="reset">Reset demo data</button>
+    </aside>
+  </div>
+
+  <div class="modal-backdrop hidden" id="modal">
+    <div class="modal">
+      <button class="icon-btn close" id="modal-close" aria-label="Close">✕</button>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <div class="toast hidden" id="toast"></div>
+
+  <script src="/app.js"></script>
+</body>
+</html>
